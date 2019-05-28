@@ -1,0 +1,22 @@
+.bg-black{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+.heading h2 {
+    color: #03293c;   
+    font-size: 2.5em;
+    padding: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.yellow-divider {
+    width: 100px;
+    height: 5px;
+    background: #DAA520;
+    margin: 0 auto 80px;
+    
+    
+}

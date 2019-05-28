@@ -1,0 +1,113 @@
+.bg-black{
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);}
+body{
+    margin: 0;
+    padding: 0;
+    /*
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(ge.png);*/
+    background-image: url(../img/ge.png);
+    background-color: #E6E6FA;
+    background-repeat: no-repeat;
+}
+.contact-form{
+  color: #D5AD6D;
+
+}
+
+
+form {
+  /* Pour le centrer dans la page */
+  margin: 0 auto;
+  width: 400px;
+
+  /* Pour voir les limites du formulaire */
+    padding: 1em; 
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  margin-top: 30px;
+  transition: all 3s ease-in-out;
+  
+
+}
+
+
+.title{
+    margin-top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 3s ease-in-out;
+    
+    
+}
+.title h1{
+    font-size: 40px;
+    font-family: Roboto;
+    margin-left:40px;
+    margin-top: 30px;
+    color: #FFEFD5;
+  
+}
+.button01 {
+  
+    font-size: 19px;
+    letter-spacing: 0.5pt;
+    padding: 10px 80px;
+    margin-left: 60px;
+    border: solid 1px;
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 1px rgb(0, 0, 0);
+    transition: .1s linear;
+  }
+  
+    
+  .gold {
+    color: #FFFFF0;;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+    background-image: radial-gradient(300px at 50% -50%, rgb(229, 184, 99) 0%, rgb(220, 175, 93) 5%, rgb(139, 96, 42) 48%, rgb(103, 61, 19) 67%, rgb(165, 121, 58) 83%, rgb(199, 154, 80) 92%, rgb(222, 177, 95) 98%, rgb(227, 181, 97) 99%, rgb(231, 185, 100) 100%);
+  }
+    .gold:hover {
+      background-image: radial-gradient(300px at 50% -50%, rgb(247, 223, 146) 0%, rgb(240, 214, 138) 5%, rgb(178, 133, 65) 48%, rgb(151, 98, 33) 67%, rgb(196, 157, 85) 83%, rgb(222, 190, 114) 92%, rgb(239, 212, 134) 98%, rgb(242, 216, 137) 99%, rgb(245, 220, 141) 100%);
+    }
+
+
+
+form .submit:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.nv{
+    text-transform: none;
+}.contact-form{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+   order: 1;
+}
+.contact-form img{
+    padding: 10px;
+    margin-right: 20px;
+}
+.fouzi{
+  margin-left: 71%;
+  margin-top: -264.5px;
+  font-family: "Crimson Text", Georgia;     
+  font-size: 1.2em;
+  font-weight: 500;
+border-radius: 8px;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.19);
+}
+
+.submit{
+  background: #FFEFD5;
+}
+@media (max-width: 668px){
+.fouzi{
+  display: none;
+}
+}
