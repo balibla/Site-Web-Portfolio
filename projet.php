@@ -91,14 +91,10 @@ $tab = $select->fetchAll();
 
 
        
-<!-- <div class="container pt-5">
-	<div class="row">
-		<h3>ALL LADICE TOP</h3>
-	</div> -->
-	<!-- <div class="underline"></div> -->
+
 
   <div class="row">
-       <!-- foreach($tab as $tab): -->
+       
 
 <div class="container mt-5">
 	<div class="row">

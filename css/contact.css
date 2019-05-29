@@ -4,8 +4,6 @@
 body{
     margin: 0;
     padding: 0;
-    /*
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(ge.png);*/
     background-image: url(../img/ge.png);
     background-color: #E6E6FA;
     background-repeat: no-repeat;

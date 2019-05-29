@@ -98,13 +98,7 @@ body {
 }
 
 
-/*.login .form input.submit {
-    background: rgba(255,255,255,.9);
-    color: #444;
-    font-size: 15px;
-    margin-top: 40px;
-    font-weight: bold;
-  }*/
+
 
 .login input[type="submit"] {
     border: none;

@@ -67,7 +67,6 @@ d<!DOCTYPE html>
 
          <input type="submit" name="submit" class="form-control submit " value="envoyer"> 
         </form>
-        <!-- <img src="ge.png" alt="fleur" height="300" width="300"> -->
     </div>
     <div class="fouzi">
       <h3>fouzia BALIBLA</h3>
@@ -114,7 +113,7 @@ $pdo=$cnx;
                                 $q->execute(array($name,$prenom,$email,$msg));
 
                             }else{
-                                echo "zolo";
+                                // echo "zolo";
                             }
                                 
                                 
