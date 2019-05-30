@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/accueil.css">
     <title>accueil</title>
     <link rel="icon" type="image/ico" href="img/logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- nav -->
@@ -56,11 +58,16 @@
     </header>
 
     <!--1 partie-->
-    <section class="tete">      
-                <div class="DW">
+
+
+    
+    <section class="tete" >      
+                <div class="DW" data-aos="zoom-in-right">
                         <img src="img/pho2.png" alt="fouzia" height="200" width="200">
                         <br><br><br><br><br>
+                        <div class="typewriter" >
                         <h2>Développeuse Web à YouCode</h2>
+                        </div>
                         <br>
                         <h1>BALIBLA FOUZIA</h1>
                         <br><br>
@@ -70,6 +77,10 @@
                 <div id="particles-js"> 
                 </div> 
                 <script src="js/accueil.js"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                AOS.init();
+                </script>
         </section>
          <!--2 partie--> 
 
@@ -194,51 +205,75 @@
     </section>
 
     <!-- 4 partie -->
-
-    <div class="titree">
+    
+          </section> -->
+          <div class="titree">
             <h2>Témoignages</h2>
           </div>
           <div class="yellow-divider">
                         
         </div>
-
-  <section id="Temoignages">
-    <div class="container-1">
-        <figure class="snip1204">
-                <blockquote>Fouzia a toujours manifesté le plus grand intérêt pour les missions qui lui ont été confiées. elle a un excellent esprit d'analyse et sa volonté d'apprendre et de s'améliorer est très précieuse tant pour elle-même que pour les collaborateurs avec qui elle a travaillé. <br><strong> Formateur référent à YouCode</strong></blockquote>
-                <div class="author">
-                  <img src="img/ys.jpg" alt="Youssef"/>
-                  <h5>Youssef OUADID </h5>
-                </div>
-              </figure>
-
-              <figure class="snip1204 hover">
-                <blockquote>Fouzia is a joyful and motivated person. Having her in the class has always given us positive energy through her strength of the proposal and her insistence to get things done.
-                        Her work in the team has made a significant difference in the realization of the project they are working on. She is brilliant in networking and searching for the information that she or her team needed.<br><strong> Formatrice référente à YouCode
-  
-                        </strong></blockquote>
-                <div class="author">
-                <img src="img/dl.jpg" alt="dalila"/>
-                  
-                  <h5> Dalila BOUTOUMILATE</h5>
-                </div>
-              </figure>
-
-              <figure class="snip1204">
-                <blockquote>
-Elle fais preuve d'une remarquable compétence soit en informatique soit autant que sportive. Dévouée, efficace et autonome. Son implication lui a dès lors permis d'atteindre l'ensemble de ses objectifs. Consciencieuse, réactive et toujours disponible. Telles sont les qualités de fouzia</blockquote>
-                <div class="author">
-                <img src="img/yn.jpg" alt="Youness"/>  
-                  <h5>Younes AGAZZOUM </h5>
-                </div>
-              </figure>
-              
-            </div>
-                
-      
-          </section>
-  
-  
+          <section id="testimonials-area" class="testimonials-area">
+				<div class="container wrapper">
+					<div class="yellow-bg ">
+						<div class="testimonials-bloc wow fadeInUp">
+							<div id="carousel-test" class="carousel slide" data-ride="carousel">
+							  <!-- slider wrapper -->
+							  <div class="carousel-inner">
+							  		<div class="yellow-header">
+							    	</div>
+								    <div class="carousel-item active">
+								    	<img src="img/ys.jpg">
+										<div class="test-content">
+											<i class="fas fa-quote-right"></i>
+										   <p>
+                       Fouzia a toujours manifesté le plus grand intérêt pour les missions qui lui ont été confiées. elle a un excellent esprit d'analyse et sa volonté d'apprendre et de s'améliorer est très précieuse tant pour elle-même que pour les collaborateurs avec qui elle a travaillé.
+											</p>
+											<p class="test-name">Youssef OUADID</p>
+											<p class="test-job">Formateur référent à YouCode</p>
+										</div>
+								    </div>
+								    <div class="carousel-item">
+								    	<img src="img/dl.jpg">
+										<div class="test-content">
+											<i class="fas fa-quote-right"></i>
+										   <p>
+                       Fouzia is a joyful and motivated person. Having her in the class has always given us positive energy through her strength of the proposal and her insistence to get things done.
+                        Her work in the team has made a significant difference in the realization of the project they are working on. She is brilliant in networking and searching for the information that she or her team needed.
+											</p>
+											<p class="test-name">Dalila BOUTOUMILATE</p>
+											<p class="test-job">Formatrice référente à YouCode</p>
+										</div>
+								    </div>
+								    <div class="carousel-item">
+								    	<img src="img/yn.jpg">
+										<div class="test-content">
+											<i class="fas fa-quote-right"></i>
+										   <p>
+                       Elle fais preuve d'une remarquable compétence soit en informatique soit autant que sportive. Dévouée, efficace et autonome. Son implication lui a dès lors permis d'atteindre l'ensemble de ses objectifs. Consciencieuse, réactive et toujours disponible. Telles sont les qualités de fouzia 
+											</p>
+											<p class="test-name">Younes AGAZZOUM</p>
+											<p class="test-job">Master (M2) on business analytics and bigdata<br>Membre equipe innovation participative</p>
+										</div>
+								    </div>
+								      
+								    <!-- indidators -->
+									  <ol class="carousel-indicators">
+									    <li data-target="#carousel-test" data-slide-to="0" class="active"></li>
+									    <li data-target="#carousel-test" data-slide-to="1" class=""></li>
+									    <li data-target="#carousel-test" data-slide-to="2" class=""></li>
+									  </ol>
+							  </div>
+							</div>
+							<div class="test-comment">
+								<p>
+									Parceque vous êtes précieux !!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
           <!-- footer -->
 
           <footer class="footer-section">
@@ -298,7 +333,7 @@ Elle fais preuve d'une remarquable compétence soit en informatique soit autant 
 
 
 
-
+               
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

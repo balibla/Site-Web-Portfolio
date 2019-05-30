@@ -13,6 +13,30 @@
     background-position: center;
     height: 970px;   
 }
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #D5AD6D; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #D5AD6D }
+}
 
 
 .DW{
@@ -252,10 +276,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     align-items: center;
 }
 
-.services-section {
-    background-color: white;
-    height: 90%;
-  }
+
   
    .services-section hr {
     border-bottom: 2px solid rgb(248, 247, 244);
@@ -309,22 +330,13 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   }
 /* 4 partie */
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-figure.snip1204 {
-  font-family: 'Raleway', Arial, sans-serif;
-  position: relative;
-  overflow: hidden;
-  margin-right: 100px;
-  min-width: 220px;
-  max-width: 310px;
-  width: 100%;
-  color: #333;
-  text-align: left;
-  box-shadow: none !important; 
- 
-}
 
+
+.testimonials-area{
+
+	padding-top: 10px;
+	padding-bottom: 150px;
+}
 .titree h2 {
     color: #03293c;
     margin-top: 0.5em;
@@ -337,94 +349,103 @@ figure.snip1204 {
     justify-content: center;
     align-items: center;
 }
-#Temoignages .heading{
-    margin-left: 37%;
-}
 
-figure.snip1204 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
- 
-}
-.snip1204{
-  margin-bottom:1rem !important;
-}
-figure.snip1204 img {
-  max-width: 100%;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin-right: 5px;
-  display: block;
-  z-index: 1;
-  position: absolute;
-  right: 50%;
-}
-figure.snip1204 blockquote {
-  margin: 0;
-  display: block;
-  border-radius: 8px;
-  position: relative;
-  background: -webkit-linear-gradient(transparent, transparent),
-  -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
-background: -o-linear-gradient(transparent, transparent);
-  padding: 30px 50px 65px 50px;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 0 0 -40px;
-  line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-figure.snip1204 blockquote:before,
-figure.snip1204 blockquote:after {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 50px;
-  opacity: 0.3;
-  font-style: normal;
-}
-figure.snip1204 blockquote:before {
-  top: 35px;
-  left: 20px;
-}
-figure.snip1204 blockquote:after {
-  content: "\201D";
-  right: 20px;
-  bottom: 35px;
-}
-figure.snip1204 .author {
-  margin: 0;
-  height: 80px;
-  display: block;
-  text-align: left;
-  color: #ffffff;
-  padding: 0 35px;
-  position: relative;
-}
-figure.snip1204 .author h5,
-figure.snip1204 .author span {
-  left: 50%;
-  position: absolute;
-  opacity: 0.8;
-  padding: 3px 5px;
-}
-figure.snip1204 .author h5 {
-  text-transform: uppercase;
-  bottom: 50%;
-  margin: 0;
-  font-weight: 800;
-  color: #000000;
+.yellow-bg{
+	border-radius: 5px;
+  	box-shadow: 0px 20px 39.7px 22.3px rgba(0, 0, 0, 0.17);
+    background-image: linear-gradient(to right bottom, #d5ad6d, #c79f60, #b99254, #ac8547, #9e783b, #936e34, #87652c, #7c5b25, #705220, #65491c, #594017, #4e3813);
 
 }
-.container-1{
-    display: flex;
-    flex-wrap: wrap;
+
+.carousel-item{
+	background-color: #fff;
+	text-align: center;
+}
+
+.carousel-item img{
+	position: relative;
+    bottom: 75px;
+    width: 150px;
+}
+
+.carousel-inner{
+	position: relative;
+    top: 85px;
+    left: 4%;
+	width: 650px;
+	border-radius: 5px;
+	background-color: #fff;
+    box-shadow: 0px 20px 39.7px 22.3px rgba(0, 0, 0, 0.17);
+}
+
+.carousel-caption h4{
+	color: #000;
+}
+
+.yellow-header{
+  background-image: linear-gradient(to right bottom, #d5ad6d, #c79f60, #b99254, #ac8547, #9e783b, #936e34, #87652c, #7c5b25, #705220, #65491c, #594017, #4e3813);
+
+  	height: 150px;
+}
+
+.test-content{
+	position: relative;
+    bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    min-height: 350px;
+}
+
+.test-content i{
+  	font-size: 30px;
+  	color: #20201d;
+  	margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.test-content p{
+	font-family: Damion;
+  	font-size: 18px;
+  	color: #20201d;
+}
+
+.carousel-indicators li {
+	background-color: #20201d;
+}
+
+p.test-name{
+	font-family: Montserrat;
+  	font-size: 20px;
+  	font-weight: bold;
+  	color: #D5AD6D;
+  	text-transform: uppercase;
+  	margin-bottom: 0;
+  	margin-top: 35px;
+}
+
+p.test-job{
+	font-family: Damion;
+    font-size: 21px;
+    color: black;
+   
+}
+
+.test-comment p{
+	font-family: 'Marck Script';
+    font-size: 72px;
+    color: #000000;
+    transform: rotate(-21deg);
+}
+
+.test-comment{
+	float: right;
+	width: 36%;
+}
+
+.testimonials-bloc{
+	display: flex;
     align-items: center;
-    justify-content: center;  
-    padding-bottom: 15%;
-    padding-top: 5%;
-    
+    justify-content: space-around;
 }
 
 
@@ -550,7 +571,7 @@ figure.snip1204 .author h5 {
     }
     .DW h2{
      
-      font-size: 30px;
+      font-size: 15px;
       line-height: 60px;   
       margin-left: -86px;
       
@@ -567,6 +588,9 @@ figure.snip1204 .author h5 {
   }
   .button01 {
     margin-left: -86px;
+  }
+  #particles-js{
+    display:none;
   }
 
 }
@@ -597,4 +621,18 @@ figure.snip1204 .author h5 {
       .services-section .services-detail{
         font-size:8px; 
       }
+  }
+
+  @media screen and (max-width:767px){
+    .carousel-inner{
+      width: 100%;
+    }
+  
+    .carousel-inner {
+        top: 0;
+    }
+  
+    .testimonials-area {
+        padding-bottom: 100px;
+    }
   }
