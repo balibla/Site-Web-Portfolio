@@ -1,3 +1,10 @@
+<?php
+
+    include "php/conf.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +15,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ranga&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/accueil.css">
     <title>accueil</title>
     <link rel="icon" type="image/ico" href="img/logo.png" />
@@ -18,26 +30,64 @@
     <!-- nav -->
     <header>
         <div class="container-fluid bg-black">
+        
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"style = "text-transform: uppercase;">
             <div class="container">
+
+            
+            
                 <li><a href="accueil.php"><img id="logo" src="img/logo.png" style="width: 40px;"> </a></li>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                  </button>
+                                 <!-- lang -->
+          <?php
+				$flag = "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_France.png"; 
+				$name = "Français";
+				if (isset($_GET['lang'])){
+					if($_GET['lang'] == 'en'){
+						$flag = "https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png";
+						$name  = "English";
+					}	
+					
+				}
+				?>
+<div class="switch-lang"> 
+  <li class="current-lang"><img class="lang-flag" src="<?= $flag?>"/>
+    <a class="lang-text" href="accueil.php?lang=fr"><?=$name?></a>
+  </li>
+  <div class="lang-dropdown">
+    
+    <li class="selecting-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_France.png"/>
+      <a class="lang-text" href="accueil.php?lang=fr">Français</a>
+    </li>
+    
+		<li class="current-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>
+    <a class="lang-text" href="accueil.php?lang=en">English</a>
+  </li>
+  </div>
+</div>
+
+
+<!-- end lang -->
+                 
                
                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
                       <ul class="navbar-nav ml-auto">
                           <li class="nav-item active">
-                             <a class="nav-link" href="accueil.php">Accueil <span class="sr-only">(current)</span></a> </li>
+                             <a class="nav-link" href="accueil.php"><?php echo $lang['1'] ?> <span class="sr-only">(current)</span></a> </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="about.php">À propos</a>
+                             <a class="nav-link" href="about.php"><?php echo $lang['2'] ?></a>
                          </li>
                          <li class="nav-item">
-                                 <a class="nav-link" href="projet.php">Projets</a>
+                                 <a class="nav-link" href="projet.php"><?php echo $lang['3'] ?></a>
                          </li>
                          <li class="nav-item">
-                                 <a class="nav-link" href="contact.php">Contact</a>
+                                 <a class="nav-link" href="contact.php"><?php echo $lang['4'] ?></a>
                          </li>
+               
                          <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             FRA
@@ -54,10 +104,12 @@
             </div>
            </nav>
         </div>
+  
       
     </header>
 
     <!--1 partie-->
+    
 
 
     
@@ -66,17 +118,18 @@
                         <img src="img/pho2.png" alt="fouzia" height="200" width="200">
                         <br><br><br><br><br>
                         <div class="typewriter" >
-                        <h2>Développeuse Web à YouCode</h2>
+                        <h2><?php echo $lang['5'] ?></h2>
                         </div>
                         <br>
                         <h1>BALIBLA FOUZIA</h1>
                         <br><br>
-                        <a href="contact.php" class="button01 gold marginRight05px">Contactez-moi   <i class="fas fa-envelope"></i></a>
+                        <a href="contact.php" class="button01 gold marginRight05px"><?php echo $lang['6'] ?>   <i class="fas fa-envelope"></i></a>
 
                 </div>
                 <div id="particles-js"> 
                 </div> 
                 <script src="js/accueil.js"></script>
+                
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <script>
                 AOS.init();
@@ -86,7 +139,7 @@
 
  <section id="zolo">
      <div class="heading">
-            <h2>COMPÉTENCES</h2>
+            <h2><?php echo $lang['7'] ?></h2>
           </div>
           <div class="yellow-divider">
           
@@ -95,38 +148,38 @@
         <div class="card-deck">
             <div class="card">
               <div class="card-body box1">
-                <p class="card-text">Configuration des routeurs et des commutateurs. <br>
-                  Certification CISCO <em>(CCNA1, CCNA2, CCNA3, CCNA4 et IT Essentials).</em>
+                <p class="card-text"><?php echo $lang['8'] ?> <br>
+                <?php echo $lang['9'] ?> <em><?php echo $lang['10'] ?></em>
                   <br><br>
-                  Administration des réseaux informatiques <em>(Sous Windows et Linux).</em> <br>
-                  Systèmes d'exploitation: Windows, Linux, Windows servers</p>
+                  <?php echo $lang['11'] ?><em><?php echo $lang['12'] ?></em> <br>
+                  <?php echo $lang['13'] ?></p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Réseaux Informatiques</small>
+                <small class="text-muted"><?php echo $lang['14'] ?></small>
               </div>
               <div class="bg"></div>
             </div>
             <div class="card">
               <div class="card-body box2">
-                <p class="card-text">Aujourd'hui je suis apte à travailler sur les projets variés donnés par notre formatrice référente. <br>
+                <p class="card-text"><?php echo $lang['15'] ?> <br>
                   <br>
-                    J'utilise les langages de programmation tels que <em>HTML, CSS, JavaScript </em>pour la partie front end<br> 
-                    et en cours d'apprendre <em>SQL,PHP</em> de la partie back end.</p>
+                  <?php echo $lang['16'] ?> <em>HTML, CSS, JavaScript </em><?php echo $lang['17'] ?><br> 
+                  <?php echo $lang['18'] ?> <em>SQL,PHP</em> <?php echo $lang['19'] ?></p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Développement Web</small>
+                <small class="text-muted"><?php echo $lang['20'] ?></small>
               </div>
               <div class="bg"></div>
 
             </div>
             <div class="card">
               <div class="card-body box3">
-                <p class="card-text">A partir d'un brief créatif ou d'un cahier des charges, je peux répondre aux besoins des utilisateurs en créant des interfaces attractives et intuitives.<br>
+                <p class="card-text"><?php echo $lang['21'] ?><br>
                   <br>  
-                  J'aime organiser mon travail en respectant les étapes logiques de la conception web, de l'arborescence du projet à la création graphique, jusqu'à son développement.</p>
+                  <?php echo $lang['22'] ?></p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">Web Design</small>
+                <small class="text-muted"><?php echo $lang['23'] ?></small>
               </div>
               <div class="bg"></div>
 
@@ -145,7 +198,7 @@
       <div class="yellow-divider">
                     
     </div>
-  
+   
 <section id="Tech" class="services-section section-space-padding">
         
         <div class="container">   
@@ -206,9 +259,9 @@
 
     <!-- 4 partie -->
     
-          </section> -->
+          </section>
           <div class="titree">
-            <h2>Témoignages</h2>
+            <h2><?php echo $lang['24'] ?></h2>
           </div>
           <div class="yellow-divider">
                         
@@ -227,10 +280,10 @@
 										<div class="test-content">
 											<i class="fas fa-quote-right"></i>
 										   <p>
-                       Fouzia a toujours manifesté le plus grand intérêt pour les missions qui lui ont été confiées. elle a un excellent esprit d'analyse et sa volonté d'apprendre et de s'améliorer est très précieuse tant pour elle-même que pour les collaborateurs avec qui elle a travaillé.
+                       <?php echo $lang['25'] ?>
 											</p>
 											<p class="test-name">Youssef OUADID</p>
-											<p class="test-job">Formateur référent à YouCode</p>
+											<p class="test-job"><?php echo $lang['26'] ?></p>
 										</div>
 								    </div>
 								    <div class="carousel-item">
@@ -238,11 +291,10 @@
 										<div class="test-content">
 											<i class="fas fa-quote-right"></i>
 										   <p>
-                       Fouzia is a joyful and motivated person. Having her in the class has always given us positive energy through her strength of the proposal and her insistence to get things done.
-                        Her work in the team has made a significant difference in the realization of the project they are working on. She is brilliant in networking and searching for the information that she or her team needed.
+                       <?php echo $lang['27'] ?>
 											</p>
 											<p class="test-name">Dalila BOUTOUMILATE</p>
-											<p class="test-job">Formatrice référente à YouCode</p>
+											<p class="test-job"><?php echo $lang['28'] ?></p>
 										</div>
 								    </div>
 								    <div class="carousel-item">
@@ -250,10 +302,10 @@
 										<div class="test-content">
 											<i class="fas fa-quote-right"></i>
 										   <p>
-                       Elle fais preuve d'une remarquable compétence soit en informatique soit autant que sportive. Dévouée, efficace et autonome. Son implication lui a dès lors permis d'atteindre l'ensemble de ses objectifs. Consciencieuse, réactive et toujours disponible. Telles sont les qualités de fouzia 
+                       <?php echo $lang['29'] ?> 
 											</p>
 											<p class="test-name">Younes AGAZZOUM</p>
-											<p class="test-job">Master (M2) on business analytics and bigdata<br>Membre equipe innovation participative</p>
+											<p class="test-job"><?php echo $lang['30'] ?><br><?php echo $lang['31'] ?></p>
 										</div>
 								    </div>
 								      
@@ -267,7 +319,7 @@
 							</div>
 							<div class="test-comment">
 								<p>
-									Parceque vous êtes précieux !!
+                <?php echo $lang['32'] ?>
 								</p>
 							</div>
 						</div>
@@ -279,7 +331,7 @@
           <footer class="footer-section">
                 <div class="foo">
                   <div class="box-1">
-                    <p class="co">Développeuse Web à YouCode <br> <br>Si vous souhaitez me contacter pour un projet n'hésitez pas à me contacter directement ou en utilisant le formulaire, je serais heureuse de vous répondre dans les plus brefs délais. </p>
+                    <p class="co"><?php echo $lang['33'] ?> <br> <br><?php echo $lang['34'] ?> </p>
                     <br>
                     <p class="e-mail">
                         <i class="fas fa-envelope"></i> fouziabalibla@gmail.com
@@ -290,13 +342,13 @@
                     </p>
                     <br>
                     <P class="localisation">
-                      <i class="fas fa-map-marker-alt"> N° 600 Laghdir Youssoufia-MAROC</i>
+                      <i class="fas fa-map-marker-alt"> N° 600 Laghdir Youssoufia-<?php echo $lang['35'] ?></i>
                     </P>       
                   </div>
                   <div class="box-2">
                       
                       
-			<h5>Où me trouver</h5>
+			<h5><?php echo $lang['36'] ?></h5>
 		  <br>
 		    	<div class="social-icons"> 
               <a href="https://www.linkedin.com/in/fouzia-balibla-7bb48a171/"><i id="social-ln" class="fa fa-linkedin fa-4x social"></i></a>

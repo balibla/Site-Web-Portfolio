@@ -1,111 +1,207 @@
 .bg-black{
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);}
+
+
+  
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+
+
+
 body{
-    margin: 0;
-    padding: 0;
-    background-image: url(../img/ge.png);
-    background-color: #E6E6FA;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/ge.png");
     background-repeat: no-repeat;
-}
-.contact-form{
-  color: #D5AD6D;
-
+    background-size: cover;
+    padding-top: 150px;
 }
 
 
-form {
-  /* Pour le centrer dans la page */
-  margin: 0 auto;
-  width: 400px;
 
-  /* Pour voir les limites du formulaire */
-    padding: 1em; 
-  border: 1px solid #CCC;
-  border-radius: 1em;
-  margin-top: 30px;
-  transition: all 3s ease-in-out;
+
+
+#container {
+  margin:auto;
+  /* width:800px; */
+  margin-left: 20%;
+  margin-bottom:50px;
+  overflow:auto;
+}
+
+#demo {
+  width:395px;
+  font-family: 'Lato', calibri, arial;
+  font-size:14px;
+  font-weight:300;
+  padding:10px;
+  text-align:left;
+  background:none;
+  overflow:auto;
+  float:left;
+  /* margin-left:40px; */
+  color:#fff;
+}
+
+#demo p{
+  font-family: 'Lato', calibri, arial;
+  font-size:25px;
+  /* font-weight:100; */
+  text-align:left;
+  margin-left:-9px;
+  color:#fff;
+
+}
+
+#container h1{
+  font-size: 40px;
+    line-height: 40px;
+    font-family: 'Abril Fatface', cursive;
+    color:	#D5AD6D; 
+    background: -webkit-linear-gradient(transparent, transparent),
+               -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+
+  padding-bottom: 5%;
+}
+
+
+
+/* Below is the design for the contact form */
+
+#contact-wrap {
+  font-family: 'Lato', calibri, arial;
+  font-size:35px;
+  font-weight:300;
+  width: 402px;
+  color:#fff;
+	overflow:auto; 
+float:left;
+
+}
+
+#contact-area {
+  margin-left:30px;
+	width: 342px;
+  padding:20px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 342px;
+  font-family: 'Lato', calibri, arial;
+  font-style: oblique;
+  font-size:20px;
+  font-weight:350;
+  color:#fff;
+      background-color:transparent;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #D5AD6D; 
+      border-right: 1px solid transparent;
   
-
+  margin-bottom:15px;
 }
 
-
-.title{
-    margin-top: 150px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 3s ease-in-out;
-    
-    
-}
-.title h1{
-    font-size: 40px;
-    font-family: Roboto;
-    margin-left:40px;
-    margin-top: 30px;
-    color: #FFEFD5;
+#contact-area textarea {
+	height: 150px;
+        background-color:transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #D5AD6D; 
+  border-right: 1px solid transparent;
   
 }
-.button01 {
+
+#contact-area textarea:focus, #contact-area input:focus {
+	        background-color:#333;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid transparent;
   
-    font-size: 19px;
-    letter-spacing: 0.5pt;
-    padding: 10px 80px;
-    margin-left: 60px;
-    border: solid 1px;
-    border-top-color: rgba(0, 0, 0, 0.1);
-    border-right-color: rgba(0, 0, 0, 0.3);
-    border-bottom-color: rgba(255, 255, 255, 0.5);
-    border-left-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 1px 5px 1px rgb(0, 0, 0);
-    transition: .1s linear;
-  }
-  
-    
-  .gold {
-    color: #FFFFF0;;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 1);
-    background-image: radial-gradient(300px at 50% -50%, rgb(229, 184, 99) 0%, rgb(220, 175, 93) 5%, rgb(139, 96, 42) 48%, rgb(103, 61, 19) 67%, rgb(165, 121, 58) 83%, rgb(199, 154, 80) 92%, rgb(222, 177, 95) 98%, rgb(227, 181, 97) 99%, rgb(231, 185, 100) 100%);
-  }
-    .gold:hover {
-      background-image: radial-gradient(300px at 50% -50%, rgb(247, 223, 146) 0%, rgb(240, 214, 138) 5%, rgb(178, 133, 65) 48%, rgb(151, 98, 33) 67%, rgb(196, 157, 85) 83%, rgb(222, 190, 114) 92%, rgb(239, 212, 134) 98%, rgb(242, 216, 137) 99%, rgb(245, 220, 141) 100%);
-    }
-
-
-
-form .submit:hover{
-    background-color: black;
-    cursor: pointer;
 }
 
-.nv{
-    text-transform: none;
-}.contact-form{
+#contact-area input.submit-button {
+  font-family: 'Lato', calibri, arial;
+  font-size:12px;
+  font-weight:300;
+  text-transform:uppercase;
+	width: 100px;
+	float: left;
+  background-color:transparent;
+  border-top: 1px solid #D5AD6D;
+  border-left: 1px solid #D5AD6D;
+  border-bottom: 1px solid #D5AD6D;
+  border-right: 1px solid #D5AD6D;
+  
+    	-moz-transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+	-ms-transition:all 0.1s ease-in-out;
+	transition:all 0.1s ease-in-out;
+}
+
+#contact-area input.submit-button:hover {
+
+  color:#fff;
+  background-color:#333;
+
+
+}
+
+
+
+
+
+::-webkit-input-placeholder {
+  color: #fff;
+
+  font-size:14px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff; 
+
+  font-size:14px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+
+  font-size:14px;
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+
+  font-size:14px;
+}
+
+
+
+
+
+@media screen and (max-width:767px){
+  #container{
     display: flex;
-    flex-direction: row;
-    flex: 1;
-   order: 1;
-}
-.contact-form img{
-    padding: 10px;
-    margin-right: 20px;
-}
-.fouzi{
-  margin-left: 71%;
-  margin-top: -264.5px;
-  font-family: "Crimson Text", Georgia;     
-  font-size: 1.2em;
-  font-weight: 500;
-border-radius: 8px;
-box-shadow: 0 0 8px rgba(0, 0, 0, 0.19);
+    flex-direction: column;
+  }
+  #container h1{
+    font-size: 20px;
+  }
+  #demo p{
+    font-size: 15px;
+    margin-right: 40px;
+
+  }
+  body{
+    padding-top: 70px;
+  }
+  #contact-wrap{
+    margin-left: -48px;
+  }
+  
 }
 
-.submit{
-  background: #FFEFD5;
-}
-@media (max-width: 668px){
-.fouzi{
-  display: none;
-}
-}
+

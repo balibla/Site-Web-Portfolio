@@ -1,4 +1,4 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,47 +43,41 @@ d<!DOCTYPE html>
         </div>
       
     </header>
-    <section>
+    <div id="container">
+    <h1>FORMULAIRE DE CONTACT</h1>  
+   <div id="demo">
+   
+  <p class="padabove">
+Si vous souhaitez me contacter pour un projet n'hésitez pas à me contacter directement ou en utilisant le formulaire, je serais heureuse de vous répondre dans les plus brefs délais.  </p>
 
     
-    <div class="title">
-        <h1>FORMULAIRE DE CONTACT</h1>
-    </div>
-    <div class="contact-form">
-        <form id="contact-form" method="post"  >
+  </div>   
+  
+  <div id="contact-wrap">   
+		<div id="contact-area">
+			
+			<form method="post" action="mail.php" onsubmit="return(validate());" novalidate="novalidate">
 
-        <label for="name">Nom :</label>
-        <input name="name" type="text" class="form-control" placeholder="Nom" required>
-        <br>
-        <label for="name">Prénom :</label>
-        <input name="prenom" type="text" class="form-control" placeholder="Prénom" required>
-        <br>
         
-        <label for="name">Email :</label>
-        <input name="email" type="email" class="form-control" placeholder="Email" required>
-        <br>
-        <label for="name">Message :</label>
-        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+				<input type="text" name="nom" id="nom" placeholder="Nom" required/>
+				
+				<input type="text" name="prenom" id="prenom" placeholder="Prénom"required/>
+	
+                <input type="text" name="telephone" id="telephone" placeholder="Téléphone"required/>
+                
+                <input type="text" name="email" id="email" placeholder="Email"required/>
 
-         <input type="submit" name="submit" class="form-control submit " value="envoyer"> 
-        </form>
-    </div>
-    <div class="fouzi">
-      <h3>fouzia BALIBLA</h3>
-      <p>Développeuse Web à YouCode</p>
-      <p class="e-mail">
-          <i class="fas fa-envelope"></i> fouziabalibla@gmail.com
-      </p>
-      <p class="phone">
-          <i class="fas fa-mobile-alt"></i> +212 618 935 227
-      </p>
-      <P class="localisation">
-          <i class="fas fa-map-marker-alt"> N° 600 Laghdir Youssoufia-MAROC</i>
-      </P>
-      
-    </div>
-    </section>
-    
+				<textarea name="message" rows="20" cols="20" id="message" placeholder="Message"></textarea>
+
+				<input type="submit" name="submit" value="envoyer" class="submit-button"/>
+			</form>
+        </div>
+     </div>
+
+
+</div>
+
+
 
 
 
@@ -93,28 +87,29 @@ d<!DOCTYPE html>
  
 </body>
 </html>
-<?php
-include 'connection.php';
-$pdo=$cnx;
-    if (isset($_POST['submit'])) {
+<!-- 
+// include 'connection.php';
+// $pdo=$cnx;
+//     if (isset($_POST['submit'])) {
         
         
 
         
       
-                                $name = $_POST['name'];
-                                $prenom = $_POST['prenom'];
-                                $email = $_POST['email'];
-                                $msg = $_POST['message'];
+//                                 $name = $_POST['name'];
+//                                 $prenom = $_POST['prenom'];
+//                                 $telephone = $_POST['telephone'];
+//                                 $email = $_POST['email'];
+//                                 $msg = $_POST['message'];
                                 
 
-                                $sql='INSERT INTO contact VALUES (NULL,?,?,?,?,NOW())';
-                                $q = $pdo->prepare($sql);
-                                $q->execute(array($name,$prenom,$email,$msg));
+//                                 $sql='INSERT INTO contact VALUES (NULL,?,?,?,?,?,NOW())';
+//                                 $q = $pdo->prepare($sql);
+//                                 $q->execute(array($name,$prenom,$telephone,$email,$msg));
 
-                            }else{
+//                             }else{
                                 // echo "zolo";
-                            }
+                            // }
                                 
                                 
 
@@ -137,4 +132,4 @@ $pdo=$cnx;
        
    
 
-                                ?>
+                            

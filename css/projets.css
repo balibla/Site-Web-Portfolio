@@ -5,7 +5,7 @@
 .heading h2 {
     color: #03293c;   
     font-size: 2.5em;
-    padding: 90px;
+    padding: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -13,10 +13,107 @@
 }
 
 .yellow-divider {
-    width: 100px;
-    height: 5px;
-    background: #DAA520;
-    margin: 0 auto 80px;
-    
-    
+  width: 100px;
+  height: 9px;
+  background: -webkit-linear-gradient(transparent, transparent),
+           -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+background: -o-linear-gradient(transparent, transparent);
+  margin: 0 auto 80px;
+}
+.row{
+  padding-bottom: 10%;
+}
+.articls-box {
+  background-image: linear-gradient(to right bottom, #d5ad6d, #c79f60, #b99254, #ac8547, #9e783b, #936e34, #87652c, #7c5b25, #705220, #65491c, #594017, #4e3813);
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.articls-box .a-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.articls-box .a-description {
+  color: #4e4e4e;
+}
+.drinks .articls-box{
+  background-color: darkred;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.drinks .articls-box .a-description {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); 
+  color: #707070;
+  padding: 55px 0 40px;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+
+/* Social Icons */
+
+.social-icons{
+  
+  margin: 0;
+  padding: 0;
+  font-size : 10px;
+}
+
+.social {
+  margin:7px 7px 7px 0px;
+  color:#D5AD6D;
+}
+#social-in:hover {
+  background: #8b2227;
+  transition:all .25s;
+}
+
+#social-ln:hover {
+  background: #007bb5;
+  transition:all .25s;
+}
+#social-fb:hover {
+   color: #3B5998;
+   transition:all .25s;
+}
+#social-tw:hover {
+   color: #4099FF;
+   transition:all .25s;
+}
+
+#social-em:hover {
+   color: #f39c12;
+   transition:all .25s;
+}
+#social-gh:hover{
+  color: #000000;
+  transition: all .25s;
+}
+#social-gl:hover{
+  background: #923304;
+  transition: all .25s;
+  
+  }
+
+
+.container h4{
+  color: #D5AD6D;
 }

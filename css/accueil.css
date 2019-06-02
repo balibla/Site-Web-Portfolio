@@ -45,13 +45,13 @@
     padding-top: 0%;
     padding-right: 0%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 30%;
 }
 .DW h1{
     font-size: 50px;
     line-height: 60px;   
-    font-family: Roboto;
+    font-family: 'Merriweather', serif;
     color:	#D5AD6D; 
     background: -webkit-linear-gradient(transparent, transparent),
                -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
@@ -330,10 +330,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   }
 /* 4 partie */
 
-
-
 .testimonials-area{
-
 	padding-top: 10px;
 	padding-bottom: 150px;
 }
@@ -366,6 +363,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 	position: relative;
     bottom: 75px;
     width: 150px;
+    border-radius: 50%;
 }
 
 .carousel-inner{
@@ -431,8 +429,8 @@ p.test-job{
 }
 
 .test-comment p{
-	font-family: 'Marck Script';
-    font-size: 72px;
+  font-family: 'Ranga', cursive;
+    font-size: 52px;
     color: #000000;
     transform: rotate(-21deg);
 }
@@ -636,3 +634,113 @@ p.test-job{
         padding-bottom: 100px;
     }
   }
+
+  /* language */
+  .switch-lang {
+    width: 115px;
+    text-align: left;
+    cursor: pointer;
+    z-index: 50;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .switch-lang:hover .lang-dropdown {
+    display: block;
+  }
+  .switcher-link {
+    color: #fff;
+  }
+  .switcher-link:hover {
+    color: #fff;
+  }
+  .current-lang {
+    background: #997f0c;
+    padding: 3px 5px 0px 5px;
+    border-radius: 5px;
+  }
+  .lang-flag {
+    width: 20px;
+    display: inline-block;
+  }
+  .lang-text {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: 2px;
+    color: white;
+  }
+  .lang-dropdown {
+    display: none;
+    background: #997f0c;
+    border-radius: 5px;
+    margin-top: 2px;
+  }
+  .selecting-lang {
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+  }
+  .selecting-lang:hover {
+    background: #22313f;
+  }
+  ul > :first-child {
+    border-radius: 5px 5px 0px 0px;
+  }
+  ul > :last-child {
+    border-radius: 0px 0px 5px 5px;
+  }
+  li {
+    list-style-type: none;
+  }
+  .menu-arrow {
+    display: inline-block;
+    width: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    margin-top: 6px;
+  }
+
+
+  #typing { 
+    box-shadow: .6em 0 0 #05ffa3;
+  margin: 2rem 1rem;
+    width: 41ch;
+  overflow: hidden;
+  color: #FFF;
+    white-space: nowrap;
+    animation: caret .5s step-end infinite alternate,
+             type 5s steps(41, end)
+}
+
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+}
+@keyframes caret { 
+  50% { 
+    box-shadow: .6em 0 0 transparent;
+  }
+}
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: [
+    "last 1 Chrome versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 Edge versions"
+  ]
+}
+@media screen and (max-width:767px){
+  .switch-lang{
+  
+    right: 40%;
+  }
+}
