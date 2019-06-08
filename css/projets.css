@@ -1,20 +1,30 @@
+/* HEADER AREA */
 .bg-black{
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
+/* HEADER AREA */
+
+
+/* MAIN BANNER */
+body{
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .heading h2 {
-    color: #03293c;   
+  padding-top: 8%;
+    color: #FAF0E6;   
     font-size: 2.5em;
-    padding: 40px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-
 }
 
 .yellow-divider {
   width: 100px;
-  height: 9px;
+  height: 5px;
   background: -webkit-linear-gradient(transparent, transparent),
            -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
 background: -o-linear-gradient(transparent, transparent);
@@ -31,16 +41,17 @@ background: -o-linear-gradient(transparent, transparent);
 }
 
 
-
 .articls-box .a-title {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   padding: .4rem 0;
+  color: black;
+  font-family: "Crimson Text", Georgia;
 }
 
 .articls-box .a-description {
-  color: #4e4e4e;
+  color: wheat;
 }
 .drinks .articls-box{
   background-color: darkred;
@@ -52,6 +63,7 @@ background: -o-linear-gradient(transparent, transparent);
 .drinks .articls-box .a-description {
   color: white;
 }
+/* MAIN BANNER */
 
 /* Footer */
 .footer {
@@ -116,4 +128,14 @@ a {
 
 .container h4{
   color: #D5AD6D;
+}
+
+@media(max-width: 600px) {
+ 
+  .heading h2 {
+    padding-top: 15%;
+     
+  }
+  
+  
 }

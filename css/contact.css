@@ -1,58 +1,72 @@
+/* HEADER AREA */
 .bg-black{
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);}
 
+  /* /HEADER AREA */
 
-  
+
+  /* /-- contact --/ */
   @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
-
-
-
-body{
-  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/ge.png");
+#contact{
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/background1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 150px;
 }
-
-
-
-
-
-#container {
-  margin:auto;
-  /* width:800px; */
-  margin-left: 20%;
-  margin-bottom:50px;
-  overflow:auto;
+.contact-form label {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #D5AD6D; 
 }
-
-#demo {
-  width:395px;
+.contact-form .form-control {
+    padding: 0.8rem;
+    border: 1px solid rgba(221, 221, 221, 0.13);
+    border-radius: 0rem;
+    letter-spacing: .5px;
+    padding: 5px;
+  	width: 342px;
+    font-family: 'Lato', calibri, arial;
+    font-style: oblique;
+    font-size:20px;
+    font-weight:350;
+    color:#fff;
+    background-color:transparent;
+    background-color:transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #D5AD6D; 
+    border-right: 1px solid transparent;
+}
+.contact-form textarea {
+    overflow: auto;
+    resize: vertical;
+    height: 8em;
+    background-color:transparent;
+}
+.contact-form button.btn.btn-default {
+    color:	white;  
+    background:transparent;
+    border: 2px solid #D5AD6D;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 0rem;
+    margin-left: 5em;
+}
+.paragraph{
+  padding-top: 10%;
   font-family: 'Lato', calibri, arial;
-  font-size:14px;
-  font-weight:300;
-  padding:10px;
-  text-align:left;
-  background:none;
-  overflow:auto;
-  float:left;
-  /* margin-left:40px; */
-  color:#fff;
-}
-
-#demo p{
-  font-family: 'Lato', calibri, arial;
-  font-size:25px;
-  /* font-weight:100; */
-  text-align:left;
+  font-size:25px; 
+   font-weight:100; 
+   text-align:left;
   margin-left:-9px;
   color:#fff;
-
 }
-
-#container h1{
-  font-size: 40px;
+.container h3{
+    font-size: 40px;
     line-height: 40px;
     font-family: 'Abril Fatface', cursive;
     color:	#D5AD6D; 
@@ -61,147 +75,71 @@ body{
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    
+    margin-left: 20%;
+} 
 
-  padding-bottom: 5%;
+/* /-- //contact --/ */
+
+
+/* Footer */
+.footer {
+  position: relative;
+  background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); 
+  color: #707070;
+  padding: 55px 0 40px;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
 }
 
 
+/* Social Icons */
 
-/* Below is the design for the contact form */
-
-#contact-wrap {
-  font-family: 'Lato', calibri, arial;
-  font-size:35px;
-  font-weight:300;
-  width: 402px;
-  color:#fff;
-	overflow:auto; 
-float:left;
-
-}
-
-#contact-area {
-  margin-left:30px;
-	width: 342px;
-  padding:20px;
-}
-
-#contact-area input, #contact-area textarea {
-	padding: 5px;
-	width: 342px;
-  font-family: 'Lato', calibri, arial;
-  font-style: oblique;
-  font-size:20px;
-  font-weight:350;
-  color:#fff;
-      background-color:transparent;
-      border-top: 1px solid transparent;
-      border-left: 1px solid transparent;
-      border-bottom: 1px solid #D5AD6D; 
-      border-right: 1px solid transparent;
+.social-icons{
   
-  margin-bottom:15px;
+  margin: 0;
+  padding: 0;
+  font-size : 10px;
 }
 
-#contact-area textarea {
-	height: 150px;
-        background-color:transparent;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid #D5AD6D; 
-  border-right: 1px solid transparent;
-  
+.social {
+  margin:7px 7px 7px 0px;
+  color:#D5AD6D;
+}
+#social-in:hover {
+  background: #8b2227;
+  transition:all .25s;
 }
 
-#contact-area textarea:focus, #contact-area input:focus {
-	        background-color:#333;
-      border-top: 1px solid transparent;
-      border-left: 1px solid transparent;
-      border-bottom: 1px solid #fff;
-      border-right: 1px solid transparent;
-  
+#social-ln:hover {
+  background: #007bb5;
+  transition:all .25s;
+}
+#social-fb:hover {
+   color: #3B5998;
+   transition:all .25s;
+}
+#social-tw:hover {
+   color: #4099FF;
+   transition:all .25s;
 }
 
-#contact-area input.submit-button {
-  font-family: 'Lato', calibri, arial;
-  font-size:12px;
-  font-weight:300;
-  text-transform:uppercase;
-	width: 100px;
-	float: left;
-  background-color:transparent;
-  border-top: 1px solid #D5AD6D;
-  border-left: 1px solid #D5AD6D;
-  border-bottom: 1px solid #D5AD6D;
-  border-right: 1px solid #D5AD6D;
-  
-    	-moz-transition:all 0.1s ease-in-out;
-	-webkit-transition:all 0.1s ease-in-out;
-	-o-transition:all 0.1s ease-in-out;
-	-ms-transition:all 0.1s ease-in-out;
-	transition:all 0.1s ease-in-out;
+#social-em:hover {
+   color: #f39c12;
+   transition:all .25s;
 }
-
-#contact-area input.submit-button:hover {
-
-  color:#fff;
-  background-color:#333;
-
-
+#social-gh:hover{
+  color: #000000;
+  transition: all .25s;
 }
-
-
-
-
-
-::-webkit-input-placeholder {
-  color: #fff;
-
-  font-size:14px;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  color: #fff; 
-
-  font-size:14px;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-  color: #fff;
-
-  font-size:14px;
-}
-
-:-ms-input-placeholder {  
-   color: #fff;  
-
-  font-size:14px;
-}
-
-
-
-
-
-@media screen and (max-width:767px){
-  #container{
-    display: flex;
-    flex-direction: column;
+#social-gl:hover{
+  background: #923304;
+  transition: all .25s;
   }
-  #container h1{
-    font-size: 20px;
-  }
-  #demo p{
-    font-size: 15px;
-    margin-right: 40px;
-
-  }
-  body{
-    padding-top: 70px;
-  }
-  #contact-wrap{
-    margin-left: -48px;
-  }
-  
+.container h4{
+  color: #D5AD6D;
 }
-
-
+/* /Footer */

@@ -1,9 +1,14 @@
+/* HEADER AREA */
 .bg-black{
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);}
+/* HEADER AREA */
 
-  .image-aboutus-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/tou.jpg");
+                            /* ////////////////////////////// */
+
+/* MAIN BANNER  */
+.image-aboutus-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/fouzia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
@@ -13,13 +18,17 @@
   }
   
   .image-aboutus-sm-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/tou.jpg");
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/fouzia.jpg");
     background-repeat: no-repeat;
     background-size: right;
     background-position: right bottom;
     color: #fff;
   }
+  /* MAIN BANNER  */
 
+                          /* ////////////////////////////// */
+
+  /* A propos */
   .lg-text {
     font-family: "Crimson Text", Georgia;
     font-size:43px;
@@ -27,9 +36,8 @@
     text-transform: none;
     color:#FAF0E6;
   }
-
   
-  .image-aboutus-para {
+.image-aboutus-para {
     color:	#D5AD6D; 
       background: -webkit-linear-gradient(transparent, transparent),
                  -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
@@ -40,7 +48,7 @@
     font-size:23px;
   }
 
-  .paddingTB60 {
+.paddingTB60 {
   padding-top:60px;
   padding-bottom:60px;
 }
@@ -54,16 +62,9 @@
 
 }
 .bgcolor-skyblue {
-  background:url(https://pngimage.net/wp-content/uploads/2018/05/ancient-paper-background-png.png) no-repeat center center fixed; 
+  background:url(../img/paper-background.png) no-repeat center center fixed; 
   background-size: cover;
 }
-
-  
-
-
-
-/************************* */
-
 
 .col-md-3,.col-md-4 {
   position: relative;
@@ -72,8 +73,6 @@
   padding-left: 0px;
   padding-top: 2%;
 }
-
-
 
 /* Buttons */
 .site-btn {
@@ -101,10 +100,10 @@ background: -o-linear-gradient(transparent, transparent);
   font-weight:700px;
   
 }
+  /* /A propos */
 
 
-
-
+                    /* ////////////////////////////// */
 
 /* Footer */
 .footer {
@@ -162,11 +161,9 @@ a {
 }
 #social-gl:hover{
   background: #923304;
-  transition: all .25s;
-  
-  }
-
-
+  transition: all .25s;  
+}
 .container h4{
   color: #D5AD6D;
 }
+/*/ Footer */

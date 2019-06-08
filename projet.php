@@ -7,6 +7,8 @@ $select = $db->query('SELECT id, name, description, image, lien FROM tab');
 $tab = $select->fetchAll();
 ?>
 
+<!-- HTML -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,18 +24,19 @@ $tab = $select->fetchAll();
     <link rel="icon" type="image/ico" href="img/logo.png" />
 
 </head>
+<!-- HEADER AREA -->
 <header>
-        <div class="container-fluid bg-black">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"style = "text-transform: uppercase;">
+        <div class="container-fluid bg-black fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black"style = "text-transform: uppercase;">
             <div class="container">
-                <li><a href="accueil.php"><img id="logo" src="img/logo.png" style="width: 40px;"> </a></li>
+                <li><a href="index.php"><img id="logo" src="img/logo.png" style="width: 40px;"> </a></li>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                  </button>
                  <div class="collapse navbar-collapse " id="navbarSupportedContent" style="margin-left: 65%;">
                       <ul class="navbar-nav">
                           <li class="nav-item">
-                             <a class="nav-link" href="accueil.php">Accueil <span class="sr-only">(current)</span></a> </li>
+                             <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a> </li>
                          <li class="nav-item">
                              <a class="nav-link" href="about.php">À propos</a>
                          </li>
@@ -49,27 +52,21 @@ $tab = $select->fetchAll();
            </nav>
         </div>   
     </header>
+    <!-- HEADER AREA -->
 <body>
-    
-  <section id="Pro">
+<!-- MAIN BANNER -->
+  <section id="Projet">
       <div class="heading">
              <h2>PROJETS</h2>
            <div class="yellow-divider">
             </div>
          </div>
+      <div class="row">
 
-
-
-       
-
-
-  <div class="row">
-       
-
-<div class="container mt-5">
-	<div class="row">
-	<?php  foreach($tab as $tabs): ?>
-  <div class="col-md-3">
+      <div class="container mt-5">
+	    <div class="row">
+      <?php  foreach($tab as $tabs): ?>
+     <div class="col-md-3">
               <div class="articls-box shadow-lg p-3 mb-5">
                 <div>
                   <img src="img/<?= $tabs['image'];?>" alt="" class="img-fluid">
@@ -85,7 +82,8 @@ $tab = $select->fetchAll();
               </div>
           </div> 
           <?php endforeach; ?>
-</section>
+    </section>
+    <!-- /MAIN BANNER -->
 <!-- footer -->
 <div class="footer-section">
     <div class="footer">
@@ -103,7 +101,7 @@ $tab = $select->fetchAll();
 		<div class="col-md-3 footer-three">
 		    <h4> Plan du site </h4>
 		    <ul>
-									<li><a href="accueil.php">Accueil</a></li><br>
+									<li><a href="index.php">Accueil</a></li><br>
 									<li><a href="about.php">À propos</a></li><br>
 									<li><a href="projet.php">Projets</a></li><br>
 									<li><a href="contact.php">Contact</a></li><br>
@@ -121,15 +119,14 @@ $tab = $select->fetchAll();
                 <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
                 <a href="https://github.com/balibla"><i id="social-gh" class="fab fa-github fa-4x social"></i></a>
                 <a href="https://gitlab.com/balibla"><i id="social-gl" class="fab fa-gitlab fa-4x social"></i></a>
-	        </div>	
-		</div>
-		
-</div>
-    
-</div>  
+        </div>	
+        </div>
+        </div>   
+        </div>  
 
+<!-- /footer -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
